@@ -1,6 +1,10 @@
 
 # Desafio #1 - Trinks
 
+## Número Feliz
+
+<br>
+
 Um número é considerado feliz, se em algum ponto a soma de seus dígitos ao quadrado equivale a 1:
 
 ```
@@ -13,6 +17,11 @@ Ex: 7 é um número feliz?
 
 Logo, 7 é um número feliz
 ```
+<br>
+
+## Número Sortudo
+
+<br>
 
 Nós começamos com uma lista de inteiros começando em 1: 
 
