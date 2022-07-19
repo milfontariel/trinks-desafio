@@ -26,7 +26,7 @@ function App() {
 
         {result &&
           <p className='mt-5 flex justify-center select-none items-center text-4xl font-bold text-[#FF8D54] bg-white p-4 rounded-md'>
-            7 =
+            {input} =
             {result.at(0)
               ? <span title='Sortudo' className='text-4xl hover:bg-slate-100 p-2 rounded-md'>&#127808;</span>
               : <span title='Não-Sortudo' className='mr-4 text-4xl hover:bg-slate-100 p-2 rounded-md'>&#128078;&#127808;</span>}
