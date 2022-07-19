@@ -1,12 +1,8 @@
-// 1. Número Feliz / Número Sortudo
-isLuckyAndOrIsHappy(28);
-function isLuckyAndOrIsHappy(userInput) {
-    var response = "";
-    isLucky(userInput)
-        ? (response += "Número Sortudo")
-        : (response += "Número Não-Sortudo");
-    isHappy(userInput) ? (response += " e Feliz") : (response += " e Não-Feliz");
-    console.log(response);
+export function isLuckyAndOrIsHappy(userInput) {
+    var response = [];
+    response.push(isLucky(userInput));
+    response.push(isHappy(userInput));
+    return response;
     function isHappy(userInput) {
         var iterationsCount = 0;
         var result = check(userInput);
@@ -55,12 +51,11 @@ function isLuckyAndOrIsHappy(userInput) {
         }
         var elements = dryArray(populateArray(userInput), 2);
         var currentIndex = 1;
-        var currentElement = elements[currentIndex];
         while (currentIndex <= userInput) {
             var previousElementsArray = elements;
             elements = dryArray(elements, elements[currentIndex]);
             if (previousElementsArray.length === elements.length) {
-                if (elements.includes(userInput)) {
+                if (elements.includes(parseInt(userInput))) {
                     return true;
                 }
                 else {
