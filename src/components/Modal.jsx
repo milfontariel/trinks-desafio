@@ -11,10 +11,15 @@ export default function Modal({ handleModal }) {
 
                     <code className='bg-slate-100 p-2'>
                         Ex: 7 é um número feliz?
+                        <br />
                         7² = 49
+                        <br />
                         4² + 9² = 97
+                        <br />
                         9² + 7² = 130
+                        <br />
                         1² + 3² + 0² = 10
+                        <br />
                         1² + 0² = 1
                     </code>
                     <p className='font-medium underline'>Logo, 7 é um número feliz.</p>
