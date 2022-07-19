@@ -25,10 +25,10 @@ export function isLuckyAndOrIsHappy(userInput) {
                 var number = list_1[_i];
                 sum += Math.pow(parseInt(number), 2);
             }
-            iterationsCount++;
             return sum;
         }
         function check(input) {
+            iterationsCount++;
             return calculatePow(split(input));
         }
     }
